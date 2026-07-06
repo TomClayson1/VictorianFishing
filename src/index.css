@@ -1,0 +1,36 @@
+*, *::before, *::after { box-sizing: border-box; }
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #040d1a;
+  color: white;
+  font-family: Inter, system-ui, sans-serif;
+}
+
+.ctrl-label {
+  font-size: 10px;
+  font-weight: 500;
+  color: #7db8e8;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.ctrl-select {
+  width: 100%;
+  background: #06111f;
+  border: 1px solid #0f2444;
+  color: white;
+  font-size: 12px;
+  border-radius: 4px;
+  padding: 4px 8px;
+  cursor: pointer;
+}
+
+/* Leaflet tile darkening */
+.leaflet-tile-pane {
+  filter: brightness(0.75) saturate(1.1);
+}
